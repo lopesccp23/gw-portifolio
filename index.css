@@ -4,63 +4,128 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
+
 body {
     background: #0d1117;
-    color: #c9d1d9;
+    color: #fff; /* texto principal lilás claro */
 }
+
+/* ===== HEADER ===== */
 header {
-    background: #161b22;
-    padding: 20px;
+    background: #92ceff; /* lilás bem escuro */
+    padding: 25px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #30363d;
+    border-bottom: 1px solid #000000;
 }
+
 header h1 {
-    color: #fff;
+    color: #000000;
+    font-size: 28px;
 }
+
 header nav a {
-    margin-left: 20px;
-    color: #4099ff;
+    margin-left: 25px;
+    color: #000000;
     text-decoration: none;
+    transition: 0.2s;
+    font-size: 16px;
 }
+
 header nav a:hover {
     text-decoration: underline;
+    color: #e3d1ff;
 }
+
+/* ===== PERFIL ===== */
 .perfil {
-    text-align: center;
-    padding: 40px 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 25px;        /* reduzido */
+    padding: 40px 20px; /* reduzido */
 }
+
 .avatar {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
-    border: 3px solid #30363d;
-    margin-bottom: 10px;
+    border: 5px solid #92ceff;
+    object-fit: cover;
 }
-.repos {
-    padding: 40px 20px;
+
+.texto-perfil {
+    text-align: center;
+    max-width: 700px;
+    line-height: 1.6;
 }
-.repos h2 {
-    margin-bottom: 10px;
+
+/* ===== SEÇÕES ===== */
+.sobre, 
+.repos, 
+.contato {
+    margin-top: 2.5px;  /* distância entre elas */
+    padding: 20px 20px; /* agora mais para cima */
+    text-align: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.sobre h2,
+.repos h2,
+.contato h2 {
+    color: #92d5ff;
+    margin-bottom: 20px;
+}
+
+/* ===== CARDS DE REPO ===== */
 .repo-card {
-    background: #ff58ff;
-    border: 1px solid #ff58ff;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 15px;
+    background: #6ebeff;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px auto;
+    max-width: 600px;
+    text-align: center;
+    transition: 0.2s;
 }
+
+.repo-card:hover {
+    background: #92ceff;
+    border-color:#0033ff;
+}
+
 .repo-card h3 {
-    color: #ff58ff;
+    color: #000000;
+    margin-bottom: 8px;
 }
+
 .repo-card a {
-    color: #ff58ff
-    
+    color: #c7a4ff;
+    text-decoration: none;
+    transition: 0.2s;
 }
+
 .repo-card a:hover {
     text-decoration: underline;
+    color: #e3d1ff;
 }
-.sobre, .contato {
-    padding: 40px 20px;
+
+/* ===== LINKS DO GITHUB ===== */
+.link-github {
+    color: #c7a4ff;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.link-github:hover {
+    text-decoration: underline;
+    color: #e3d1ff;
+}
+
+/* ===== DESTAQUE ===== */
+.destaque {
+    color: #92ceff;
 }
